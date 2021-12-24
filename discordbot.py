@@ -1,6 +1,6 @@
 import discord
 
-
+bot = discord.Bot()
 client = discord.Client()
 
 
