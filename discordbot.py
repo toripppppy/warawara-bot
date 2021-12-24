@@ -1,6 +1,3 @@
-from discord.ext import commands
-from os import getenv
-import traceback
 import discord
 
 
@@ -30,6 +27,7 @@ async def on_message(message: discord.Message):
         await message.guild.voice_client.disconnect()
 
         await message.channel.send("切断しました。")
+
 
         
 token = getenv('DISCORD_BOT_TOKEN')
